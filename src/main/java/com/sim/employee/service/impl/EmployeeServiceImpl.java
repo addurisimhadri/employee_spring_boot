@@ -1,8 +1,9 @@
 package com.sim.employee.service.impl;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 import com.sim.employee.entities.Employee;
 import com.sim.employee.repo.EmployeeRepository;
@@ -27,8 +28,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		employeeRepository.deleteById(id);		
 	}
 	@Override
-	public Employee getEmployeeById(int id) {		
-		return employeeRepository.getOne(id);
+	public Optional<Employee> getEmployeeById(int id) {		
+		return employeeRepository.findById(id);
 	}
 
 }
