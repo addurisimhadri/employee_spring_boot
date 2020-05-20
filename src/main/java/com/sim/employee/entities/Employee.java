@@ -76,7 +76,7 @@ public class Employee implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "EmployeeBean [id=" + id + ", ename=" + ename + ", age=" + age + ", salary=" + salary
+		return "Employee [id=" + id + ", ename=" + ename + ", age=" + age + ", salary=" + salary
 				+ ", designation=" + designation + ", email=" + email + ", add=" + add + "]";
 	}		
 }
